@@ -2,4 +2,7 @@
 
 requires python 3.*
 
+## Authors
 
+- Henrik Qvigstad
+- Christian Ekrem
