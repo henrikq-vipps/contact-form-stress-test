@@ -13,10 +13,6 @@ def fetch():
     print('get', get)
     set_cookie = get.headers['Set-Cookie']
     csrftoken = re.compile('csrftoken=([^;]*);').search(set_cookie).group(1)
-    headers = {
-      "content-type": "application/x-www-form-urlencoded",
-      "cookie": set_cookie
-    }
     data = {
       "csrfmiddlewaretoken": csrftoken,
       "name": "Ola Nordmann",
